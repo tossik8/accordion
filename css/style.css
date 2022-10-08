@@ -25,10 +25,12 @@ body main .panel .info article .flex {
 body main .panel .info article .flex img {
   -o-object-fit: contain;
      object-fit: contain;
+  transition: transform 0.6s ease;
 }
 body main .panel .info article .flex .question {
   color: hsl(237deg, 12%, 33%);
   font-weight: 400;
+  font-size: 0.75rem;
 }
 body main .panel .info article .flex .question.bold {
   font-weight: 700;
@@ -37,8 +39,15 @@ body main .panel .info article .flex .question:hover {
   color: hsl(14deg, 88%, 65%);
   cursor: pointer;
 }
+body main .panel .info article .flex .rotate-img {
+  transform: rotate(180deg);
+  transition: transform 0.5s ease-in;
+}
 body main .panel .info article .answer {
   color: hsl(240deg, 6%, 50%);
+  font-size: 0.75rem;
+  margin-top: -0.3rem;
+  width: 86%;
 }
 body main .panel .info article hr {
   background-color: hsl(240deg, 5%, 91%);
@@ -52,6 +61,9 @@ body footer .attribution a {
 }
 
 @media screen and (max-width: 375px) {
+  body main {
+    width: 90%;
+  }
   body main .panel {
     display: flex;
     flex-direction: column;
@@ -60,19 +72,36 @@ body footer .attribution a {
   }
   body main .panel .image {
     background: url(../images/bg-pattern-mobile.svg) no-repeat;
-    position: relative;
-    background-position: top left 49%;
-    width: 100%;
+    background-position: top left 1.5rem;
+    background-size: 80%;
   }
   body main .panel .image img {
     position: relative;
-    left: 10%;
-    top: -7rem;
-    width: 15rem;
+    width: 80%;
+    top: -28vw;
+    left: 1.5rem;
   }
   body main .panel .info h1 {
     margin-top: -3.5rem;
     text-align: center;
     font-size: 2.1rem;
+  }
+  body main .panel .info article .flex .question {
+    width: 80%;
+  }
+  body main .panel .info .question-article:nth-of-type(1) .flex {
+    gap: 3.8rem;
+  }
+  body main .panel .info .question-article:nth-of-type(2) .flex {
+    gap: 3.9rem;
+  }
+  body main .panel .info .question-article:nth-of-type(3) .flex {
+    gap: 23.4%;
+  }
+  body main .panel .info .question-article:nth-of-type(4) .flex {
+    gap: 22.4%;
+  }
+  body main .panel .info .question-article:nth-of-type(5) .flex {
+    gap: 3.4rem;
   }
 }/*# sourceMappingURL=style.css.map */
