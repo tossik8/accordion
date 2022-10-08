@@ -60,8 +60,9 @@ body footer .attribution a {
   color: hsl(228deg, 45%, 44%);
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
   body main {
+    margin-top: 5rem;
     width: 90%;
   }
   body main .panel {
@@ -72,13 +73,13 @@ body footer .attribution a {
   }
   body main .panel .image {
     background: url(../images/bg-pattern-mobile.svg) no-repeat;
-    background-position: top left 1.5rem;
+    background-position: top 1.5rem left 1.5rem;
     background-size: 80%;
   }
   body main .panel .image img {
     position: relative;
     width: 80%;
-    top: -28vw;
+    top: -20vw;
     left: 1.5rem;
   }
   body main .panel .info h1 {
@@ -103,5 +104,54 @@ body footer .attribution a {
   }
   body main .panel .info .question-article:nth-of-type(5) .flex {
     gap: 3.4rem;
+  }
+}
+@media screen and (min-width: 376px) {
+  body main {
+    width: 70%;
+  }
+  body main .panel {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "a b";
+  }
+  body main .panel .image {
+    grid-area: a;
+  }
+  body main .panel .image .woman-container {
+    overflow: hidden;
+    background: url(../images/bg-pattern-desktop.svg) no-repeat;
+    background-size: auto;
+    background-position: top -13rem left -29rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  body main .panel .image .woman-container .woman {
+    position: relative;
+    left: -4vw;
+    width: 35rem;
+    margin-top: 10%;
+  }
+  body main .panel .image .box {
+    position: absolute;
+    width: 13rem;
+    top: 45.5vh;
+    left: 10%;
+    margin-bottom: -10rem;
+  }
+  body main .panel .info {
+    grid-area: b;
+    width: 80%;
+    padding: 4rem 0;
+  }
+  body main .panel .info article .flex {
+    justify-content: space-between;
+  }
+  body main .panel .info article .flex .question {
+    font-size: 1rem;
+  }
+  body main .panel .info article .answer {
+    font-size: 0.8rem;
   }
 }/*# sourceMappingURL=style.css.map */

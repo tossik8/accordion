@@ -15,13 +15,16 @@
   <main>
     <div class="panel">
       <div class="image">
+        <div class="woman-container">
+          <picture>
+            <source media="(max-width: 376px)" srcset="images\illustration-woman-online-mobile.svg">
+            <img src="images\illustration-woman-online-desktop.svg" alt="woman starting at a screen." class="woman">
+          </picture>
+        </div>
+
         <picture>
-          <source media="(max-width: 375px)" srcset="images\illustration-woman-online-mobile.svg">
-          <img src="images\illustration-woman-online-desktop.svg" alt="woman starting at a screen.">
-        </picture>
-        <picture>
-          <source media="(min-width: 375px)" srcset="./images/illustration-box-desktop.svg">
-          <img src="">
+          <source media="(min-width: 376px)" srcset="./images/illustration-box-desktop.svg">
+          <img class="box" src="">
         </picture>
       </div>
       <div class="info">
