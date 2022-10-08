@@ -44,4 +44,4 @@ Learned how to add paragraphs from JS and how to rotate elements in CSS
 ## Author
 
 - Facebook - [Nikita](https://www.facebook.com/nikita.toropov.54)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/tossik8)
+- Frontend Mentor - [@tossik8](https://www.frontendmentor.io/profile/tossik8)
